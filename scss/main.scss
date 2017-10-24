@@ -1,0 +1,116 @@
+@import "_normalize";
+@import "_variables";
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    background-color: $base-color-grey;
+}
+
+.lc-wrapper {
+    max-width: $base-width;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.lc-title__img {
+    width: 100%;
+    max-width: 24rem;
+
+    @media (max-width: 800px) {
+        max-width: 10rem;
+    }
+}
+
+.lc-title__text {
+    font-size: 3.6rem;
+    color: $base-font-color;
+    padding-top: 2.7rem;
+    padding-left: 1rem;
+    font-weight: 700;
+}
+
+.lc-title {
+    display: flex;
+    flex-flow: row nowrap;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.lc-form__group-label {
+    width: 16rem;
+    font-size: 1.4rem;
+}
+
+.lc-form__group-input {
+    border: .1rem solid $base-color-border;
+    height: 2.8rem;
+    width: 20rem;
+    box-sizing: border-box;
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+
+.lc-form-wrapper {
+    background-color: #fff;
+    padding: 2rem; 
+}
+
+.lc-form__group {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.lc-form__button-submit {
+    margin-top: 2rem;
+    background-color: $base-color-green;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    border: 0;
+    border-radius: 0;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+input[disabled=disabled] {
+    background-color: $base-color-grey;
+}
+
+.lc-welcome-screen__title {
+    font-size: 2.6rem;
+    text-align: center;
+    color: $base-font-color;
+    padding-top: 20rem;
+    box-sizing: border-box;
+
+    @media (max-width: 800px) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 2rem;
+    }
+}
+
+.lc-date-match-message,
+.lc-password-match-message {
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    color: $base-color-orange;  
+
+    @media (max-width: 800px) {
+        padding-left: 0;
+        display: block;
+        padding-top: .5rem;
+    }
+}
+
+.lc-welcome-screen {
+    background: $base-color-grey;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
